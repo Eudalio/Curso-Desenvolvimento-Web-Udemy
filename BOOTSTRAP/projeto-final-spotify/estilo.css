@@ -5,11 +5,17 @@
 */
 
 /* ========================== layout =========================== */
-
+html, body, .capa{
+    height: 100%;
+}
 body {
-    font-family: Circular,Helvetica,Arial,sans-serif;
+    font-family: Helvetica,Arial,sans-serif;
     font-size: 15px;
     line-height: 1.5;
+    background: url('imagens/capa.png'),
+                url('imagens/ruido.png'),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
 }
 
 /* -- Barra de navegação -- */
@@ -51,4 +57,57 @@ nav.navbar-transparente{
 .navbar-inverse .navbar-nav>li>a:hover{
     color: #1db954;
 }
+
+/* Imagem de capa */
+
+.capa{
+    width: 100%;  
+    display: table; 
+}
+
+.texto-capa{
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Botões */
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    padding: 12px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0px 5px;    
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-green{
+    color: #fff;
+    background-color: #1db954;
+}
+
+.btn-green:hover{
+    color: #fff;
+    background: #1ed760;
+}
+
+.btn-branco{
+    border: 2px solid #fff;
+}
+.btn-branco:hover{
+    color: #000;
+    background: whitesmoke;
+}
+
 /* ========================== tipografia =========================== */
+h1{
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
